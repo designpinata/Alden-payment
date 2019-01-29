@@ -1,0 +1,213 @@
+@import './../settings/index.scss';
+
+/* ***********************************
+ *
+ *    Ire's CSS Reset & Base
+ *
+ * *********************************** */
+
+/* Reset margin, padding, border
+ * *********************************** */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
+blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Typography
+  * *********************************** */
+
+html {
+    font-size: $default_font_size;
+    font-family: $font;
+}
+
+body {
+    font-size: $p;
+    line-height: 1.4;
+    color: $black_neutral;
+}
+
+* {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+
+/* Layout
+  * *********************************** */
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Elements
+  * *********************************** */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+img {
+    border-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none;
+}
+
+/* Attributes & states
+  * *********************************** */
+
+[hidden] {
+    display: none !important;
+}
+
+[disabled] {
+    cursor: not-allowed;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Typography
+  * *********************************** */
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+h1 {
+    font-size: $h1;
+    line-height: $h1 + .5rem;
+    font-weight: $bold;
+}
+
+h2 {
+    font-size: $h2;
+    line-height: $h2 + .5rem;
+    font-weight: $bold;
+}
+
+h3 {
+    font-size: $h3;
+    line-height: $h3 + .5rem;
+    font-weight: $bold;
+}
+
+p {
+    font-size: $p;
+    line-height: 1.4rem;
+    font-weight: $regular;
+}
+
+small {
+    font-size: $small;
+    line-height: $p;
+    font-weight: $regular;
+}

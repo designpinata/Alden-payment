@@ -6,9 +6,11 @@ import * as serviceWorker from './serviceWorker';
 
 // Components 
 import Layout from './Components/Grid'
+import Footer from './Components/Footer';
 // Pages
 import Method from './Views/Method'
-import Footer from './Components/Footer';
+import ServiceNumber from './Views/ServiceNumber';
+
 
 class Alden extends Component {
     render() {
@@ -17,6 +19,7 @@ class Alden extends Component {
                 <BrowserRouter>
                     <Switch>
                         <Route exact path='/' component={Method}/>
+                        <Route exact path='/service-number' component={ServiceNumber}/>
                         <Route component={()=> (<h1>Nothing here!</h1>)}/>
                     </Switch>
                 </BrowserRouter>

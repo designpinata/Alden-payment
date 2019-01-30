@@ -1,28 +1,26 @@
 import React, {Component} from 'react'
 import { Layout } from './../../Components/Grid'
-import styles from './method.module.scss'
+import styles from './snum.module.scss'
 
 // Components
 import Button from './../../Components/Button';
 import Steps from './../../Components/Steps'
+import Nav from '../../Components/Nav';
 
-class Method extends Component {
+class ServiceNumber extends Component {
     render() {
         return(
             <section className={styles.__view}>
+                <Nav back={true}><h3>BUSQUEDA POR NUMERO DE SERVICIO</h3></Nav>
                 <Layout type="container">
                     <Layout type="row" align="center">
                         <Layout type="column" columns="12">
-                            <h1>Bienvenido</h1>
-                            <h3>Seleccione un metodo de búsqueda para consultar su orden de compra:</h3>
+                            <h3>Ingresa tu numero de servicio para continuar</h3>
                         </Layout>
                         <Layout type="column" columns="12">
                             <Layout type="row" align="center">
                                 <Layout type="column" columns="4">
-                                    <Button>Numero de servicio</Button>
-                                </Layout>
-                                <Layout type="column" columns="4">
-                                    <Button>Nombre de consumidor</Button>
+                                    <Button disabled>Buscar servicio</Button>
                                 </Layout>
                             </Layout>    
                         </Layout>
@@ -34,4 +32,4 @@ class Method extends Component {
     }
 }
 
-export default Method
+export default ServiceNumber

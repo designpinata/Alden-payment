@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { Layout } from './../../Components/Grid'
-import styles from './snum.module.scss'
+import styles from './sname.module.scss'
 
 // Components
 import Button from './../../Components/Button';
@@ -9,25 +9,46 @@ import Nav from './../../Components/Nav';
 import Input from './../../Components/Input';
 import Results from './../../Components/Results'
 
-class ServiceNumber extends Component {
+const results = [
+    {
+        id: 0,
+        serviceNum: 878798787,
+        paid: 100,
+        pending: 300,
+        total: 400
+    }, {
+        id: 1,
+        serviceNum: 878798787,
+        paid: 200,
+        pending: 200, 
+        total: 400
+    }, {
+        id: 2,
+        serviceNum: 878798787,
+        paid: 200,
+        pending: 200, 
+        total: 400
+    }, 
+]; 
+
+class ServiceName extends Component {
     render() {
         return(
             <section className={styles.__view}>
-                <Nav back={true}><h3>BUSQUEDA POR NUMERO DE SERVICIO</h3></Nav>
+                <Nav back={true}><h3>BÚSQUEDA POR NOMBRE</h3></Nav>
                 <Layout type="container">
                     <Layout type="row" align="center">
                         <Layout type="column" columns="12">
-                            <h3>Ingresa tu numero de servicio para continuar</h3>
+                            <h3>Ingresa tu nombre para poder continuar</h3>
                         </Layout>
                         <Layout type="column" columns="12">
                             <Layout type="row" align="center">
                                 <Layout type="column" columns="6">
                                     <Input 
-                                        type="number"
-                                        id="serviceNumber"
-                                        placeholder="Numero de servicio"
-                                        helper="Su numero de servicio se encuentra en la parte superior de su recibo."
-                                        label={false}>Numero de servicio</Input>
+                                        type="text"
+                                        id="serviceName"
+                                        placeholder="Nombre completo"
+                                        label={false}>Nombre de cliente</Input>
                                 </Layout>
                             </Layout>
                             <Layout type="row" align="center">
@@ -37,7 +58,7 @@ class ServiceNumber extends Component {
                             </Layout>
                             <Layout type="row" align="center">
                                 <Layout type="column" columns="6">
-                                    <Results type="error">No hay servicios registrados a ese folio, intente de nuevo.</Results>
+                                    <Results type="name" list={results}></Results>
                                 </Layout>
                             </Layout>    
                         </Layout>
@@ -49,4 +70,4 @@ class ServiceNumber extends Component {
     }
 }
 
-export default ServiceNumber
+export default ServiceName

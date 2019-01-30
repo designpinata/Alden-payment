@@ -1,0 +1,62 @@
+@import './../../styles/settings/index.scss';
+
+.__error {
+    background: #FF4F4F;
+    border-radius: .5rem;
+    padding: .5rem 5rem;
+
+    h3 {
+        color: $white;
+    }
+}
+
+.__results {
+    background: $white_dark;
+    border-radius: .5rem;
+    padding: 1rem;
+
+    header {
+        color: $black_light;
+    }
+}
+
+
+.__head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+}
+
+.__name {
+    width: calc(60%);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.__price {
+    width: calc(20%);
+    text-align: right;
+}
+
+.__queries {
+    padding-top: .5rem;
+}
+
+.__query {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+    padding: .5rem 0;
+}
+
+.__icon {
+    background: $primary_dark;
+    border-radius: .5rem;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+} 

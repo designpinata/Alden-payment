@@ -6,7 +6,7 @@ $black_neutral: #333333;
 $black_light: #595959;
 $black_dark: #101010;
 $white: #FFFFFF;
-$white_darker: #F0F0F0;
+$white_dark: #F0F0F0;
 
 // Font Family
 $font: 'Roboto', sans-serif;
@@ -20,3 +20,14 @@ $h3: 1rem;
 $p: 1rem;
 $small: .75rem;
 $micro: .625rem;
+
+@mixin hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+}

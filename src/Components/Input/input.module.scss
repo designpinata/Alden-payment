@@ -1,0 +1,43 @@
+@import './../../styles/settings/index.scss';
+
+.__bound {
+    padding: .5rem 0;
+    width: 100%;
+
+    small {
+        color: $primary_neutral;
+    }
+}
+
+.__label {
+    font-family: $font;
+    font-weight: $bold;
+    color: $black_light;
+    font-size: $h3;
+}
+
+.__label_no {
+    @include hidden;
+}
+
+.__input {
+    appearance: none;
+    border: $black_light 1px solid;
+    border-radius: .5rem;
+    height: 3.5rem;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: $h3;
+    font-weight: $bold;
+    color: $primary_neutral;
+    transition: all ease-in 150ms;
+    &::placeholder {
+        color: $black_light;
+    } 
+    &:focus, &:hover {
+        outline-style: dashed;
+        outline-width: 2px;
+        outline-color: #46C1E9;
+        color: $primary_neutral;
+    }
+}
